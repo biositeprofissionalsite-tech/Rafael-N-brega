@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residenciais de Luxo | Emplavi Noroeste</title>
+    
+    <meta property="og:title" content="Residenciais de Luxo | Emplavi Noroeste">
+    <meta property="og:description" content="Descubra o ápice do conforto e sofisticação em Brasília.">
+    <meta property="og:image" content="https://emplavi.com.br/empreendimentos/wp-content/uploads/2021/08/fachada-diamante.jpg">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #002b5c; /* Azul Marinho Sofisticado */
+            --gold: #c5a059;    /* Dourado Elegante */
+            --whatsapp: #25d366;
+            --bg: #f4f7f6;
+            --text: #1a1a1a;
+        }
+
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background: var(--bg); 
+            margin: 0; 
+            padding: 40px 20px; 
+            color: var(--text); 
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .section-title { 
+            text-align: center; 
+            font-size: 2.8rem; 
+            margin-bottom: 60px; 
+            color: var(--primary); 
+            font-weight: 800; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+        }
+
+        .container { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 30px; 
+            justify-content: center; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+
+        /* Card Style - Luxo */
+        .card { 
+            background: #fff; 
+            width: 350px; 
+            border-radius: 15px; 
+            overflow: hidden; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08); 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+            position: relative; 
+            border: 1px solid rgba(0,0,0,0.05); 
+        }
+
+        .card:hover { 
+            transform: translateY(-10px); 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15); 
+        }
+
+        /* Imagem */
+        .card-img { 
+            width: 100%; 
+            height: 220px; 
+            object-fit: cover; 
+            transition: 0.5s; 
+        }
+        .card:hover .card-img { 
+            filter: brightness(1.05); 
+        }
+
+        /* Conteúdo */
+        .card-body { 
+            padding: 25px; 
+            text-align: center; 
+        }
+        .card-title { 
+            font-size: 1.5rem; 
+            color: var(--primary); 
+            margin: 0; 
+            font-weight: 700; 
+        }
+        .card-subtitle { 
+            color: var(--gold); 
+            font-weight: bold; 
+            margin: 10px 0; 
+            font-size: 1rem; 
+            text-transform: uppercase; 
+        }
+        .card-desc { 
+            font-size: 0.95rem; 
+            color: #555; 
+            line-height: 1.5; 
+            margin-bottom: 25px; 
+            height: 45px; 
+            overflow: hidden;
+        }
+
+        /* Botão Ametista/Diamante */
+        .btn-view { 
+            position: relative; 
+            display: block; 
+            background: var(--primary); 
+            color: #fff; 
+            text-decoration: none; 
+            padding: 14px; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            overflow: hidden; 
+            transition: 0.3s; 
+            margin-bottom: 12px; 
+            border: none; 
+            font-size: 0.9rem; 
+            text-transform: uppercase;
+        }
+        
+        /* Efeito Shimmer no Botão */
+        .btn-view::after { 
+            content: ''; 
+            position: absolute; 
+            top: -50%; 
+            left: -60%; 
+            width: 20%; 
+            height: 200%; 
+            background: rgba(255,255,255,0.2); 
+            transform: rotate(30deg); 
+            transition: 0.5s; 
+        }
+        .btn-view:hover::after { left: 120%; }
+        .btn-view:hover { background: #004085; }
+
+        /* Botão Rafael */
+        .btn-rafael { 
+            display: block; 
+            color: var(--primary); 
+            text-decoration: none; 
+            padding: 10px; 
+            font-size: 0.85rem; 
+            font-weight: 600; 
+            border: 1px solid var(--primary); 
+            border-radius: 8px; 
+            transition: 0.3s; 
+        }
+        .btn-rafael:hover { 
+            background: var(--primary); 
+            color: #fff;
+        }
+
+        @media (max-width: 768px) { 
+            .card { width: 100%; } 
+        }
+    </style>
+</head>
+<body>
+
+<h2 class="section-title">Empreendimentos Disponíveis</h2>
+
+<div class="container">
+
+    <div class="card">
+        <img src="https://emplavi.com.br/empreendimentos/wp-content/uploads/2021/08/fachada-ametista.jpg" alt="Residencial Ametista" class="card-img" loading="lazy">
+        <div class="card-body">
+            <h3 class="card-title">Residencial Ametista</h3>
+            <p class="card-subtitle">2 Quartos</p>
+            <p class="card-desc">Conforto e praticidade em um projeto moderno no Noroeste.</p>
+            <a href="https://emplavi.com.br/empreendimentos/residencial-ametista/" target="_blank" class="btn-view">Ver empreendimento</a>
+            <a href="https://wa.me/5561985309658?text=Olá%20Rafael!%20Vi%20o%20Residencial%20Ametista%20e%20quero%20saber%20mais." target="_blank" class="btn-rafael">Falar com Rafael</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://emplavi.com.br/empreendimentos/wp-content/uploads/2021/08/fachada-topazio.jpg" alt="Residencial Topázio" class="card-img" loading="lazy">
+        <div class="card-body">
+            <h3 class="card-title">Residencial Topázio</h3>
+            <p class="card-subtitle">3 Suítes</p>
+            <p class="card-desc">Espaço e sofisticação para viver o melhor de Brasília.</p>
+            <a href="https://emplavi.com.br/empreendimentos/residencial-topazio/" target="_blank" class="btn-view">Ver empreendimento</a>
+            <a href="https://wa.me/5561985309658?text=Olá%20Rafael!%20Gostaria%20de%20detalhes%20sobre%20o%20Residencial%20Topázio." target="_blank" class="btn-rafael">Falar com Rafael</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://emplavi.com.br/empreendimentos/wp-content/uploads/2021/08/fachada-esmeralda.jpg" alt="Residencial Esmeralda" class="card-img" loading="lazy">
+        <div class="card-body">
+            <h3 class="card-title">Residencial Esmeralda</h3>
+            <p class="card-subtitle">4 Suítes</p>
+            <p class="card-desc">Elegância absoluta e amplitude para o legado da sua família.</p>
+            <a href="https://emplavi.com.br/empreendimentos/residencial-esmeralda/" target="_blank" class="btn-view">Ver empreendimento</a>
+            <a href="https://wa.me/5561985309658?text=Olá%20Rafael!%20Pode%20me%20enviar%20a%20tabela%20do%20Residencial%20Esmeralda?" target="_blank" class="btn-rafael">Falar com Rafael</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://emplavi.com.br/empreendimentos/wp-content/uploads/2021/08/fachada-rubi.jpg" alt="Residencial Rubi" class="card-img" loading="lazy">
+        <div class="card-body">
+            <h3 class="card-title">Residencial Rubi</h3>
+            <p class="card-subtitle">4 Suítes</p>
+            <p class="card-desc">Alto padrão em cada detalhe, feito para quem exige o melhor.</p>
+            <a href="https://emplavi.com.br/empreendimentos/residencial-rubi/" target="_blank" class="btn-view">Ver empreendimento</a>
+            <a href="https://wa.me/5561985309658?text=Olá%20Rafael!%20Tenho%20interesse%20no%20Residencial%20Rubi." target="_blank" class="btn-rafael">Falar com Rafael</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://emplavi.com.br/empreendimentos/wp-content/uploads/2021/08/fachada-diamante.jpg" alt="Residencial Diamante" class="card-img" loading="lazy">
+        <div class="card-body">
+            <h3 class="card-title">Residencial Diamante</h3>
+            <p class="card-subtitle">Até 5 Suítes</p>
+            <p class="card-desc">O máximo em exclusividade e luxo. O topo da pirâmide imobiliária.</p>
+            <a href="https://emplavi.com.br/empreendimentos/residencial-diamante/" target="_blank" class="btn-view">Ver empreendimento</a>
+            <a href="https://wa.me/5561985309658?text=Olá%20Rafael!%20Quero%20conhecer%20a%20exclusividade%20do%20Residencial%20Diamante." target="_blank" class="btn-rafael">Falar com Rafael</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
